@@ -77,9 +77,15 @@ def create():
     else:
         proxee = None
 
-    fName = names.get_first_name()
-    lName = names.get_last_name()
-    email = fName + lName + config['catchall']
+    if config['userealname']:
+        fName = config['firstname']
+        lName = config['lastname']
+    else:
+        fName = names.get_first_name()
+        lName = names.get_last_name()
+    
+    
+    email = names.get_first_name() + names.get_last_name() + config['catchall']
 
 
     url = 'https://undefeated.com/account'
