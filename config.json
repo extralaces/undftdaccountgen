@@ -1,6 +1,9 @@
 {
    "catchall": "@website.abc", 
-   "password": "Undefeated536",
-   "threadcount": 5, 
-   "useproxies": true
+   "password": "Undefeated4523",
+   "threadcount": 5,
+   "useproxies": true,
+   "userealname": true,
+   "firstname": "Jimmy",
+   "lastname": "Jones"
 }
