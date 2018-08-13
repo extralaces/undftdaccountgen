@@ -63,12 +63,8 @@ def create():
 
     useProxies = config['useproxies']
 
-    try:
-        proxy_manager = ProxyManager('proxies.txt')
-    except:
-        print('no proxies detected, using proxyless mode')
-        useProxies = True
-
+    proxy_manager = ProxyManager('proxies.txt')
+    
     if useProxies:
         random_proxy = proxy_manager.random_proxy()
         proxee = random_proxy.get_dict() 
